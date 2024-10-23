@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget, QSt
 class MyApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('admin.ui', self)  # UI 파일 경로
+        uic.loadUi('manager_pc/dogniel_manager/dogniel_manager.ui', self)  # UI 파일 경로
 
         # StackedWidget과 버튼 찾기
         self.stacked_widget = self.findChild(QStackedWidget, 'stackedWidget')

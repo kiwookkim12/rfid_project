@@ -6,7 +6,7 @@ import struct
 from ultralytics import YOLO
 
 # YOLO 모델 로드
-#model = YOLO("best.pt") ---------------------------------------------------pt파일 보유 시 주석 제거
+#model = YOLO("best.pt") ---------------------------------------------------#pt파일 보유 시 주석 제거
 
 def receive_video(server_ip):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -28,7 +28,8 @@ def receive_video(server_ip):
                 data += packet
             frame = pickle.loads(data)
             frame = cv2.resize(frame, dsize=(640,640))
-            #frame = model(frame) ---------------------------------------pt파일 보유 시 주석 제거
+            #frame = model(frame) ---------------------------------------#pt파일 보유 시 주석 제거
+            #frame = frame[0].plot() ------------------------------------#pt파일 보유 시 주석 제거
         except Exception as e:
                 print(f"오류 발생: {e}")
                 break

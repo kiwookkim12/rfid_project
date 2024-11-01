@@ -24,20 +24,20 @@
      </rect>
     </property>
     <property name="text">
-     <string>customer</string>
+     <string>고객 관리</string>
     </property>
    </widget>
    <widget class="QPushButton" name="r_Button">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>220</y>
+      <y>240</y>
       <width>89</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>robot</string>
+     <string>시스템 관리</string>
     </property>
    </widget>
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -46,28 +46,28 @@
       <x>0</x>
       <y>130</y>
       <width>160</width>
-      <height>89</height>
+      <height>107</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_1">
      <item>
       <widget class="QPushButton" name="c1_Button">
        <property name="text">
-        <string>c1</string>
+        <string>체크인</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="c2_Button">
        <property name="text">
-        <string>c2</string>
+        <string>회원등록</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="c3_Button">
        <property name="text">
-        <string>c3</string>
+        <string>체크인 리스트</string>
        </property>
       </widget>
      </item>
@@ -77,23 +77,30 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>250</y>
+      <y>270</y>
       <width>160</width>
-      <height>80</height>
+      <height>107</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QPushButton" name="r2_Button">
+      <widget class="QPushButton" name="r1_Button">
        <property name="text">
-        <string>r1</string>
+        <string>cctv</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="r1_Button">
+      <widget class="QPushButton" name="r2_Button">
        <property name="text">
-        <string>r2</string>
+        <string>로봇 상태</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="r3_Button">
+       <property name="text">
+        <string>맵</string>
        </property>
       </widget>
      </item>
@@ -104,12 +111,15 @@
      <rect>
       <x>170</x>
       <y>10</y>
-      <width>891</width>
+      <width>1021</width>
       <height>561</height>
      </rect>
     </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
     <widget class="QWidget" name="page_1">
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="p1_name">
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -122,7 +132,7 @@
        <string>이름</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="p1_phone_num">
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -135,7 +145,7 @@
        <string>전화번호 뒷자리</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="p1_check_Button">
       <property name="geometry">
        <rect>
         <x>500</x>
@@ -148,142 +158,542 @@
        <string>PushButton</string>
       </property>
      </widget>
+     <widget class="QListWidget" name="p1_listWidget">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>220</y>
+        <width>421</width>
+        <height>191</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="p2_name">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>130</y>
+        <x>170</x>
+        <y>80</y>
         <width>113</width>
         <height>25</height>
        </rect>
       </property>
       <property name="text">
-       <string>이름</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_4">
+     <widget class="QLineEdit" name="p2_phone_num">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>170</x>
         <y>180</y>
+        <width>131</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ex)010-1234-5678</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_name">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>280</y>
         <width>113</width>
         <height>25</height>
        </rect>
       </property>
       <property name="text">
-       <string>전번 (전체)</string>
+       <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
+     <widget class="QPushButton" name="p2_register_Button">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>230</y>
-        <width>113</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>동물 이름</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="geometry">
-       <rect>
-        <x>530</x>
+        <x>710</x>
         <y>180</y>
         <width>221</width>
         <height>121</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>등록</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
+     <widget class="QLineEdit" name="p2_dog_breed">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>230</y>
-        <width>113</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>종</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_7">
-      <property name="geometry">
-       <rect>
-        <x>380</x>
-        <y>230</y>
-        <width>113</width>
-        <height>25</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>나이</string>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_8">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
+        <x>374</x>
         <y>280</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_birth_year">
+      <property name="geometry">
+       <rect>
+        <x>374</x>
+        <y>330</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_remarks">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>440</y>
         <width>371</width>
         <height>25</height>
        </rect>
       </property>
       <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_birth_date">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>130</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_gender">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>330</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_health_issue">
+      <property name="geometry">
+       <rect>
+        <x>164</x>
+        <y>380</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_vaccination_status">
+      <property name="geometry">
+       <rect>
+        <x>374</x>
+        <y>380</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_gender">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>80</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="p2_dog_neutered">
+      <property name="geometry">
+       <rect>
+        <x>574</x>
+        <y>330</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_name_Label">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>이름</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_birth_date_Label">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>130</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>생년월일</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_phone_number_Label">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>180</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>전화번호</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_name_Label">
+      <property name="geometry">
+       <rect>
+        <x>94</x>
+        <y>280</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>이름</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_gender_Label">
+      <property name="geometry">
+       <rect>
+        <x>94</x>
+        <y>330</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>성별</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_health_issue_Label">
+      <property name="geometry">
+       <rect>
+        <x>94</x>
+        <y>380</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>건강상태</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_remarks_Label">
+      <property name="geometry">
+       <rect>
+        <x>94</x>
+        <y>440</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
        <string>특이사항</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_gender_Label">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>80</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>성별</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_breed_Label">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>280</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>종</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_birth_year_Label">
+      <property name="geometry">
+       <rect>
+        <x>304</x>
+        <y>330</y>
+        <width>67</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>출생년도</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_vaccination_status_Label">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>380</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>백신접종 여부</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_neutered_Label">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>330</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>중성화 여부</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_information_Label">
+      <property name="geometry">
+       <rect>
+        <x>116</x>
+        <y>16</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>견주 정보</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p2_dog_information_Label">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>220</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>반려견 정보</string>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QTableWidget" name="p3_tableWidget">
       <property name="geometry">
        <rect>
-        <x>520</x>
-        <y>240</y>
-        <width>89</width>
-        <height>25</height>
+        <x>70</x>
+        <y>120</y>
+        <width>721</width>
+        <height>341</height>
        </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_4">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QLabel" name="p4_cctv_Label">
       <property name="geometry">
        <rect>
-        <x>570</x>
-        <y>160</y>
-        <width>89</width>
-        <height>25</height>
+        <x>100</x>
+        <y>20</y>
+        <width>800</width>
+        <height>500</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
       </property>
      </widget>
     </widget>
     <widget class="QWidget" name="page_5">
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QLabel" name="p5_minibot_cam_1_Label">
       <property name="geometry">
        <rect>
-        <x>610</x>
-        <y>400</y>
-        <width>89</width>
-        <height>25</height>
+        <x>480</x>
+        <y>40</y>
+        <width>241</width>
+        <height>231</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p5_minibot_cam_2_Label">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>310</y>
+        <width>241</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="p5_map_Label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>371</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableView" name="p5_minibot1_tableView">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>40</y>
+        <width>256</width>
+        <height>131</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableView" name="p5_minibot_2_tableView">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>310</y>
+        <width>256</width>
+        <height>131</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="p5_cancel_1_Button">
+      <property name="geometry">
+       <rect>
+        <x>738</x>
+        <y>184</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>연결 끊기</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="p5_cancel_2_Button">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>460</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>연결 끊기</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="p_6_map">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>800</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>

@@ -1,0 +1,149 @@
+# Refined .ui file content with enhanced layout for a more sophisticated look
+refined_ui_content = """
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DogHotelSystem</class>
+ <widget class="QWidget" name="DogHotelSystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dog Hotel System</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="text">
+      <string>🐾 Welcome to the Dog Hotel System 🐾</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="checkInOutFrame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="checkInOutLayout">
+      <item>
+       <widget class="QPushButton" name="checkInButton">
+        <property name="text">
+         <string>Check In</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="checkOutButton">
+        <property name="text">
+         <string>Check Out</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <property name="title">
+      <string>Check-In/Out</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="managementFrame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="managementLayout">
+      <item>
+       <widget class="QPushButton" name="registerDogButton">
+        <property name="text">
+         <string>Register New Dog</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="viewInfoButton">
+        <property name="text">
+         <string>View Dog Information</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="recentRecordsButton">
+        <property name="text">
+         <string>Recent Check-In Records</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="deleteCardButton">
+        <property name="text">
+         <string>Delete RFID Card</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+     <property name="title">
+      <string>Management</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="text">
+      <string>Status: Ready</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="exitButton">
+     <property name="text">
+      <string>Exit</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+"""
+
+# Saving the refined .ui file content
+refined_ui_file_path = '/mnt/data/dog_hotel_system_refined.ui'
+with open(refined_ui_file_path, 'w', encoding='utf-8') as ui_file:
+    ui_file.write(refined_ui_content)
+
+refined_ui_file_path
